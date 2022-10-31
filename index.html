@@ -384,9 +384,25 @@
         <div class="modal">
             <button data-modal-close class="close-btn"> 
                 <svg width="18" height="18">
-                    <use href="./images/spriteform.svg#icon-close-btn"></use>
+                    <use href="./images/sprite.svg#icon-close-btn"></use>
                 </svg>
             </button>
+            <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="form">
+                <div role="group" class="form-group">
+                    <label for="username" class="label-form">Ім'я</label>
+                    <input type="text" name="username" id="username" class="form-fill">
+
+                    <label for="usertel" class="label-form">Телефон</label>
+                    <input type="tel" name="usertel" id="usertel" class="form-fill">
+
+                    <label for="user-email" class="label-form">Пошта</label>
+                    <input type="email" name="user-email" id="user-email" class="form-fill">
+
+                    <label for="username" class="label-form">Коментар</label>
+                    <textarea name="username" id="username" class="form-fill form-comment" placeholder="Введіть текст">
+                </div>
+            </form>
         </div>
     </div>
     <script src="./modal.js"></script>
