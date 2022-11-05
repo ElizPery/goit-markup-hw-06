@@ -377,31 +377,60 @@
                     </li>
                 </ul>
             </div>
+            <form class="form-follow">
+                <label for="follow-mail" class="label-follow-form">Підпишіться на розсилку</label>
+                <div class="btn-follow">
+                    <input type="email" name="user-mail" id="follow-mail" class="follow-mail" placeholder="E-mail">
+                    <button type="submit" class="follow-submit">Підписатися<span class="icon-follow"></span></button>
+                </div>
+            </form>
         </div>
     </footer>
 
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
             <button data-modal-close class="close-btn"> 
-                <svg width="18" height="18">
+                <svg width="18" height="18" class="svg-close">
                     <use href="./images/sprite.svg#icon-close-btn"></use>
                 </svg>
             </button>
             <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
-            <form class="form">
+            <form class="form-modal">
                 <div role="group" class="form-group">
                     <label for="username" class="label-form">Ім'я</label>
-                    <input type="text" name="username" id="username" class="form-fill">
+                    <div class="input-group">
+                        <input type="text" name="username" id="username" class="form-fill">
+                        <svg width="18" height="18" class="svg-input">
+                            <use href="./images/sprite.svg#icon-form-name"></use>
+                        </svg>
+                    </div>
 
                     <label for="usertel" class="label-form">Телефон</label>
-                    <input type="tel" name="usertel" id="usertel" class="form-fill">
+                    <div class="input-group">
+                        <input type="tel" name="usertel" id="usertel" class="form-fill">
+                        <svg width="18" height="18" class="svg-input">
+                            <use href="./images/sprite.svg#icon-form-tel"></use>
+                        </svg>
+                    </div>
 
                     <label for="user-email" class="label-form">Пошта</label>
-                    <input type="email" name="user-email" id="user-email" class="form-fill">
+                    <div class="input-group">
+                        <input type="email" name="user-email" id="user-email" class="form-fill">
+                        <svg width="18" height="18" class="svg-input">
+                            <use href="./images/sprite.svg#icon-form-mail"></use>
+                        </svg>
+                    </div>
 
                     <label for="username" class="label-form">Коментар</label>
-                    <textarea name="username" id="username" class="form-fill form-comment" placeholder="Введіть текст">
+                    <textarea name="username" id="username" class="form-fill form-comment" placeholder="Введіть текст"></textarea>
                 </div>
+                <div class="secure-conditions">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="secure" value="agreement" class="checkbox">
+                        <span class="custom-checkbox"></span><span class="label-secure">Погоджуюся з розсилкою та приймаю</span><span class="conditions">Умови договору</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn-submit-form">Відправити</button>
             </form>
         </div>
     </div>
